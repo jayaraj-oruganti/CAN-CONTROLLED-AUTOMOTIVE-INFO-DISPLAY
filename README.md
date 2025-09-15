@@ -15,12 +15,19 @@ The nodes communicate over Controller Area Network (CAN), with each performing a
 
 CAN_Project/
 ├── m_node.c          # Main node (temperature + RTC + indicator control + CAN Tx/Rx)
+
 ├── fuel_node.c       # Fuel monitoring node (ADC + CAN Tx)
+
 ├── indicator_node.c  # Indicator node (CAN Rx + LED indicators)
+
 ├── adc.c / adc.h     # ADC driver
+
 ├── can.c / can_defines.h # CAN driver and configuration
+
 ├── lcd.c / lcd.h     # LCD driver for display (used by main node)
+
 ├── rtc.c / rtc.h     # RTC driver (used by main node)
+
 ├── *.uvproj, *.uvopt # Keil µVision project files
 
 Main Node (m_node)
